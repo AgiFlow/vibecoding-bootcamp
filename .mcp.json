@@ -1,0 +1,36 @@
+{
+  "mcpServers": {
+    "scaffold-mcp": {
+      "type": "stdio",
+      "disabled": false,
+      "command": "npx",
+      "args": [
+        "-y",
+        "@agiflowai/scaffold-mcp",
+        "mcp-serve"
+      ]
+    },
+    "architect-mcp": {
+      "type": "stdio",
+      "disabled": false,
+      "command": "npx",
+      "args": [
+        "-y",
+        "@agiflowai/architect-mcp",
+        "mcp-serve"
+      ]
+    },
+    "context7": {
+      "type": "http",
+      "url": "https://mcp.context7.com/mcp",
+      "disabled": false
+    },
+    "playwright": {
+      "type": "stdio",
+      "command": "sh",
+      "args": ["-c", "pnpx @playwright/mcp@latest"],
+      "env": {},
+      "disabled": false
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "@vibecoding/bootcamp",
+  "version": "1.0.0",
+  "description": "A comprehensive, tool-agnostic bootcamp for developers learning AI-assisted coding (vibecoding)",
+  "scripts": {
+    "start": "nx run-many --target=dev --all",
+    "build": "nx run-many --target=build --all",
+    "test": "nx run-many --target=test --all",
+    "graph": "nx graph",
+    "affected:build": "nx affected --target=build",
+    "affected:test": "nx affected --target=test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AgiFlow/vibecoding-bootcamp.git"
+  },
+  "keywords": [
+    "vibecoding",
+    "ai-assisted-coding",
+    "bootcamp",
+    "learning",
+    "monorepo"
+  ],
+  "author": "AgiFlow",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/AgiFlow/vibecoding-bootcamp/issues"
+  },
+  "homepage": "https://github.com/AgiFlow/vibecoding-bootcamp#readme",
+  "devDependencies": {
+    "@nx/workspace": "^21.6.4",
+    "nx": "^21.6.4"
+  },
+  "workspaces": [
+    "chapters/typescript/*",
+    "chapters/python/*",
+    "chapters/go/*",
+    "chapters/rust/*"
+  ]
+}
